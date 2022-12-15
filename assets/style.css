@@ -1,22 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Mansalva&family=Rubik+Marker+Hatch&family=Sniglet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@500&family=Mansalva&family=Rubik+Marker+Hatch&family=Sniglet&display=swap');
 /* List Font-family 
     ?font-family: 'Caveat', cursive;
     *font-family: 'Mansalva', cursive;
     ?font-family: 'Rubik Marker Hatch', cursive;
     *font-family: 'Sniglet', cursive;
+    ?font-family: 'Inter', sans-serif
 */
 @import url(css/menu.css);
 /* Importamos los estilos que estan por serpardo */
 
-body{
-    background-color: antiquewhite;
+/* Estilo de colo con paleta de colores sena */
+.bg-sena{
+    background:#39d353
+}
+.bg-navbar{
+    background: rgb(80,194,110);
+    background: linear-gradient(346deg, rgba(80,194,110,1) 14%, rgba(57,169,0,1) 48%, rgba(24,177,134,0.9920343137254902) 88%);
+}
+.menu-bar{
+    margin-top: 10px;
+    border-radius: 20px;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Sniglet', cursive;
+}
+.welcome-banner{
+    font-family: 'Rubik Marker Hatch', cursive
+}
+#btn-inscripciones{
+    border-radius: 20px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 10s ease infinite;
+	        animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+#btn-inscripciones:hover{
+    background-color: rgb(187, 156, 115);
+    border-radius: 20px;
+    transform: scale(1.05);
 }
 /*? Estilo del banner de sitio en construccion */
 #welcome-banner{
+    font-size: 50px; 
     font-family: 'Mansalva', cursive;
-    font-size: 50px;
     text-align: center;
+
 }
+.linea-formacion{
+    transition: 0.2s linear;
+}
+.linea-formacion:hover{
+    transform: translateY(-15px);
+}
+
 .under-construction{
     border-radius: 20%;
     width: 30pc;
@@ -48,4 +94,13 @@ body{
 
 .wave .shape-fill {
     fill: #39a900;
+}
+/* Espacio para el formulario */
+.form-layout{
+    max-width: 1000px;
+}
+.next-section{
+    background-color: #e73c7e;
+    width: 100px;
+    height: 50px;
 }
