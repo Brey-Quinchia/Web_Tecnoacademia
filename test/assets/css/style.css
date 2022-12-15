@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
+/* @import url('https://fonts.googleapis.com/css?family=Roboto'); */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@500&family=Mansalva&family=Rubik+Marker+Hatch&family=Sniglet&display=swap');
 body{
 	font-family: 'Roboto', sans-serif;
 }
@@ -164,4 +164,47 @@ i {
 		bottom: -25px;
 		left: -25px;
 	}
+}
+
+.linea-formacion{
+    transition: 0.2s linear;
+}
+.linea-formacion:hover{
+    /* transform: translateY(-15px); */
+    transform: scale(1.01) translateY(-10px);
+}
+
+.btn-inscripcion{
+	text-decoration: none;
+	background: linear-gradient(-45deg, #39d353, #6dce297d, #23a6d5, #39d353);
+	background-size: 400% 400%;
+	-webkit-animation: change-color 4s ease infinite;
+	        animation: change-color 4s ease infinite;
+	border: none;
+	border-radius: 20px; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	font-family: 'Sniglet', cursive;
+    width: 150px;
+	transition: 0.2s linear;
+}
+@keyframes change-color {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.icon{
+	width: 20px;
+	transition: 0.1s linear;
+}
+.rotate:hover{
+	transform: rotate(90deg);
 }
