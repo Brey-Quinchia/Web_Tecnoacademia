@@ -105,6 +105,11 @@
     width: 100px;
     height: 50px;
 }
+.titulo-linea{
+    font-size: xx-large;
+    font-family: 'Sniglet', cursive;
+    
+}
 .btn-inscripcion{
 	text-decoration: none;
 	background: linear-gradient(-45deg, #39d353, #6dce297d, #23a6d5, #39d353);
@@ -138,13 +143,4 @@
 }
 .rotate:hover{
 	transform: rotate(90deg);
-}
-.img-fill{
-    object-fit: fill;
-}
-#tic-line-banner{
-    background-image: url('img/banner-ingenieria.jpg');
-    background-size:200%;
-    background-repeat: no-repeat;
-    background-position: center;
 }
