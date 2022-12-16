@@ -38,7 +38,7 @@
             </form>
         </div>
         <div class="form-layout">
-            sayd hello
+            i am not gg
         </div>
     <script src="../assets/js/bootstrap.bundle.js"></script>
     
