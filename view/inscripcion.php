@@ -71,10 +71,9 @@ if (isset($_REQUEST['linea'])) {
             <div class="col-md-6 bg-light">
                 <label for="" class="form-label fs-5">Departamento de Expedicion del Documento</label>
                 <select class="form-select ms-2" aria-label="departamento-expedicion" name="nombre-linea">
-                    <option value="">A</option>
-                    <option value="">B</option>
-                    <option value="">C</option>
-                    <option value="">D</option>
+                    <?php
+                    require('../model/dataGov.php');
+                    ?>
                 </select>
             </div>
             <div class="col-md-6 bg-light">
@@ -104,10 +103,9 @@ if (isset($_REQUEST['linea'])) {
             <div class="col-md-6 bg-light">
                 <label for="" class="form-label fs-5">Departamento de Nacimiento</label>
                 <select class="form-select ms-2" aria-label="departamento-expedicion" name="nombre-linea">
-                    <option value="">A</option>
-                    <option value="">B</option>
-                    <option value="">C</option>
-                    <option value="">D</option>
+                    <?php
+                    require('../model/dataGov.php');
+                    ?>
                 </select>
             </div>
             <div class="col-md-6 bg-light">
@@ -259,7 +257,4 @@ if (isset($_REQUEST['linea'])) {
     </div>
     <script src="../assets/js/bootstrap.bundle.js"></script>
 </body>
-<!-- A simple gratin -->
-
 </html>
-<!-- is a simple comment  -->
