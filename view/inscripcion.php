@@ -265,3 +265,4 @@ if (isset($_REQUEST['linea'])) {
 </body>
 
 </html>
+<!-- is a simple comment  -->
