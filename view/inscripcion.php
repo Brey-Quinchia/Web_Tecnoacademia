@@ -79,7 +79,7 @@ if (isset($_REQUEST['linea'])) {
             </div>
             <div class="col-md-6 bg-light">
                 <label for="" class="form-label fs-5">Municipio de Expedicion</label>
-                <select class="form-select ms-2" aria-label="nombre-linea" name="nombre-linea">
+                <select class="form-select" aria-label="nombre-linea" name="nombre-linea">
                     <option value="">A</option>
                     <option value="">B</option>
                     <option value="">C</option>
@@ -188,7 +188,7 @@ if (isset($_REQUEST['linea'])) {
             <!--//? Datos de contacto -->
             <div class="col-md-10 bg-light">
                 <label for="" class="form-label fs-5">Correo Eletronico</label>
-                <input class='form-control ms-2' type="email" name="" id="" placeholder="Here...">
+                <input class='form-control ms-2' type="email" name="" id="" placeholder="example@example.com">
             </div>
             <div class="col-md-10 bg-light">
                 <label for="" class="form-label fs-5">Telefono Celular</label>
