@@ -16,14 +16,14 @@ if (isset($_REQUEST['linea'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script>
-        function autoselect(id){
-            document.getElementById(id).selected='true';
+        function autoselect(id) {
+            document.getElementById(id).selected = 'true';
         }
     </script>
     <title>Incripciones 2023</title>
 </head>
 
-<body onload="autoselect('<?=$linea?>')">
+<body onload="autoselect('<?= $linea ?>')">
     <header>
         <?php include_once('components/navbar.html') ?>
     </header>
@@ -229,7 +229,7 @@ if (isset($_REQUEST['linea'])) {
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
                         <label class="form-check-label" for="gridRadios2">
-                            Si 
+                            Si
                         </label>
                     </div>
                     <div class="form-check">
@@ -255,14 +255,11 @@ if (isset($_REQUEST['linea'])) {
         </form>
     </div>
 
-            </form>
-        </div>
-        <div class="form-layout">
-            i am not gg
-        </div>
+    </form>
+    </div>
     <script src="../assets/js/bootstrap.bundle.js"></script>
-
 </body>
 <!-- A simple gratin -->
+
 </html>
 <!-- is a simple comment  -->
