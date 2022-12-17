@@ -6,10 +6,11 @@
     *font-family: 'Sniglet', cursive;
     ?font-family: 'Inter', sans-serif
 */
-@import url(css/menu.css);
+
 /* Importamos los estilos que estan por serpardo */
 
 /* Estilo de colo con paleta de colores sena */
+
 .bg-sena{
     background:#39d353
 }
