@@ -26,7 +26,8 @@
                         Para realizar el proceso de Inscripción en la Tecnoacademia Fija Arauca, se hacen necesarios
                         los siguiente documentos y formatos:
                     </p>
-                    <div class="container" id="list-document">
+                </div>
+                    <div class="container-document mx-auto" id="list-document">
                         <ol class="list-group list-group-numbered">
                             <li class="list-group-item d-flex justify-content-between align-items-start">
                                 <div class="ms-2 me-auto">
@@ -45,11 +46,11 @@
                             <!--//? Link de descarga del formato D1 -->
                             <li class="list-group-item d-flex justify-content-between align-items-start">
                                 <div class="ms-2 me-auto">
-                                    <div class="fw-bold">Formato "Name format D1"</div>
-                                    Formato "Name Format D1", correctamente diligenciado.
-                                    <a href="#temporaldownload" class="go-download">
+                                    <div class="fw-bold">Formato <strong>D1-Clausula De Compromiso</strong></div>
+                                    Clausula de Compromiso del aprendiz correctamente diligenciada.
+                                    <a href="../download/?doc=D1" class="go-download">
                                         <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                                            Descarga el formato D1 👉
+                                            👉Descarga el formato D1👈  
                                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                         </div>
                                     </a>
@@ -59,11 +60,12 @@
                             <!--//? Link de descarga del formato D1 -->
                             <li class="list-group-item d-flex justify-content-between align-items-start">
                                 <div class="ms-2 me-auto">
-                                    <div class="fw-bold">Formato "Name format D2"</div>
-                                    Formato "Name Format D1", correctamente diligenciado.
-                                    <a href="#temporaldownload" class="go-download">
+                                    <div class="fw-bold">Formato <strong>D2-Información de Registro</strong></div>
+                                    Formato de Informacion requerida para registro en plataforma,
+                                    correctamente diligenciado.
+                                    <a href="../download/?doc=D2" class="go-download">
                                         <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                                            Descarga el formato D2 👉
+                                            👉Descarga el formato D2👈  
                                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                         </div>
                                     </a>
@@ -73,11 +75,11 @@
                             <!--//? Link de descarga del formato D1 -->
                             <li class="list-group-item d-flex justify-content-between align-items-start">
                                 <div class="ms-2 me-auto">
-                                    <div class="fw-bold">Formato "Name format D3"</div>
-                                    Formato "Name Format D1", correctamente diligenciado.
-                                    <a href="#temporaldownload" class="go-download">
+                                    <div class="fw-bold">Formato <strong>D3-Tratamiento de Datos</strong></div>
+                                    Formato "Tratamiento de datos Menor de edad", correctamente diligenciado.
+                                    <a href="../download/?doc=D3" class="go-download">
                                         <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                                            Descarga el formato D3 👉
+                                            👉Descarga el formato D3👈  
                                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                         </div>
                                     </a>
@@ -87,7 +89,7 @@
                         </ol>
                     </div>
                     <!--//!Fin del contenedor de listado de documentos -->
-                </div>
+                
             </div>
         </div>
     </main>
