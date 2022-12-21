@@ -27,69 +27,80 @@
                         los siguiente documentos y formatos:
                     </p>
                 </div>
-                    <div class="container-document mx-auto" id="list-document">
-                        <ol class="list-group list-group-numbered">
-                            <li class="list-group-item d-flex justify-content-between align-items-start">
-                                <div class="ms-2 me-auto">
-                                    <div class="fw-bold">Documento de identidad del alumno a inscribirse</div>
-                                    Documento escaneado por ambas caras en formato PDF.
-                                </div>
-                                <span class="badge bg-danger rounded-pill">PDF</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-start">
-                                <div class="ms-2 me-auto">
-                                    <div class="fw-bold">Documento de identidad del Acudiente</div>
-                                    Documento escaneado por ambas caras en formato PDF.
-                                </div>
-                                <span class="badge bg-danger rounded-pill">PDF</span>
-                            </li>
-                            <!--//? Link de descarga del formato D1 -->
-                            <li class="list-group-item d-flex justify-content-between align-items-start">
-                                <div class="ms-2 me-auto">
-                                    <div class="fw-bold">Formato <strong>D1-Clausula De Compromiso</strong></div>
-                                    Clausula de Compromiso del aprendiz correctamente diligenciada.
-                                    <a href="../download/?doc=D1" class="go-download">
-                                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                                            👉Descarga el formato D1👈  
-                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                                        </div>
-                                    </a>
-                                </div>
-                                <span class="badge bg-danger rounded-pill">PDF</span>
-                            </li>
-                            <!--//? Link de descarga del formato D1 -->
-                            <li class="list-group-item d-flex justify-content-between align-items-start">
-                                <div class="ms-2 me-auto">
-                                    <div class="fw-bold">Formato <strong>D2-Información de Registro</strong></div>
-                                    Formato de Informacion requerida para registro en plataforma,
-                                    correctamente diligenciado.
-                                    <a href="../download/?doc=D2" class="go-download">
-                                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                                            👉Descarga el formato D2👈  
-                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                                        </div>
-                                    </a>
-                                </div>
-                                <span class="badge bg-danger rounded-pill">PDF</span>
-                            </li>
-                            <!--//? Link de descarga del formato D1 -->
-                            <li class="list-group-item d-flex justify-content-between align-items-start">
-                                <div class="ms-2 me-auto">
-                                    <div class="fw-bold">Formato <strong>D3-Tratamiento de Datos</strong></div>
-                                    Formato "Tratamiento de datos Menor de edad", correctamente diligenciado.
-                                    <a href="../download/?doc=D3" class="go-download">
-                                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                                            👉Descarga el formato D3👈  
-                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                                        </div>
-                                    </a>
-                                </div>
-                                <span class="badge bg-danger rounded-pill">PDF</span>
-                            </li>
-                        </ol>
-                    </div>
-                    <!--//!Fin del contenedor de listado de documentos -->
-                
+                <div class="container-document mx-auto" id="list-document">
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Documento de identidad del alumno a inscribirse</div>
+                                Documento escaneado por ambas caras en formato PDF.
+                            </div>
+                            <span class="badge bg-danger rounded-pill">PDF</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Documento de identidad del Acudiente</div>
+                                Documento escaneado por ambas caras en formato PDF.
+                            </div>
+                            <span class="badge bg-danger rounded-pill">PDF</span>
+                        </li>
+                        <!--//? Link de descarga del formato D1 -->
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Formato <strong>D1-Clausula De Compromiso</strong></div>
+                                Clausula de Compromiso del aprendiz correctamente diligenciada.
+                                <a href="../download/?doc=D1" class="go-download">
+                                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        👉Descarga el formato D1👈
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="badge bg-danger rounded-pill">PDF</span>
+                        </li>
+                        <!--//? Link de descarga del formato D1 -->
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Formato <strong>D2-Información de Registro</strong></div>
+                                Formato de Informacion requerida para registro en plataforma,
+                                correctamente diligenciado.
+                                <a href="../download/?doc=D3" class="go-download">
+                                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        👉Descarga el formato D3👈
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="badge bg-danger rounded-pill">PDF</span>
+                        </li>
+                        <!--//? Link de descarga del formato D1 -->
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Formato <strong>D3-Tratamiento de Datos</strong></div>
+                                Formato "Tratamiento de datos Menor de edad", correctamente diligenciado.
+                                <a href="../download/?doc=D3" class="go-download">
+                                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        👉Descarga el formato D3👈
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="badge bg-danger rounded-pill">PDF</span>
+                        </li>
+                    </ol>
+                </div>
+                <!--//!Fin del contenedor de listado de documentos -->
+                <div class="container d-flex justify-content-center">
+                    <form action="inscripcion.php" method="post">
+                        <?php include_once('../model/requireLine.php') ?>
+                        <a href="<?= 'inscripcion.php?linea=' . $linea ?>" class="btn fs-5">
+                            <div class="btn-inscripcion mx-auto">
+                                Inscribirse
+                                <img src="../assets/icon/submit.svg" alt="" class="icon submit rotate">
+                            </div>
+                        </a>
+                    </form>
+
+                </div>
             </div>
         </div>
     </main>

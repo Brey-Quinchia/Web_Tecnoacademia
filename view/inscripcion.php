@@ -20,6 +20,8 @@ if (isset($_REQUEST['linea'])) {
             document.getElementById(id).selected = 'true';
         }
     </script>
+    <script async src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+
     <title>Incripciones 2023</title>
 </head>
 
@@ -52,15 +54,15 @@ if (isset($_REQUEST['linea'])) {
                 </div>
                 <!--//* Alerta de relevancia al usuario-->
                 <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                    <strong class="fs-5">Recuerda que: </strong> Debes realizar la carga de los documentos solicitados en la
-                    Seccion <a href="#" class="alert-link">Antes de Empezar</a>, sin estos documentos no podras
+                    <strong class="fs-5">Recuerda que: </strong> Debes realizar la carga de los documentos descritos en la
+                    Seccion <a href="beforeStart.php" class="alert-link">Antes de Empezar</a>, sin estos documentos no podras
                     realizar el proceso de inscripción.
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
                 <!--//?Contenedores de carga de Archivos-->
                 <div class="row">
                     <div class=" col-md-4 mb-3">
-                        <label for="formFile" class="form-label fs-5">Documento de Identidad Postulante</label>
+                        <label for="formFile" class="form-label fs-5">Documento de Identidad del Aprendiz</label>
                         <input class="form-control" type="file" id="formFile">
                     </div>
                     <div class=" col-md-4 mb-3">
@@ -117,7 +119,8 @@ if (isset($_REQUEST['linea'])) {
             <!--//? Datos del lugar  de expedicion del documento -->
             <div class="col-md-6 bg-light">
                 <label for="" class="form-label fs-5">Departamento de Expedicion del Documento</label>
-                <select class="form-select ms-2" aria-label="departamento-expedicion" name="nombre-linea">
+                <select class="form-select ms-2" aria-label="departamento-expedicion" name="lst-departamentos" id="lst-departamentos">
+                    <option selected>Seleccionar Departamento...</option>
                     <?php
                     require('../model/dataGov.php');
                     ?>
@@ -125,12 +128,10 @@ if (isset($_REQUEST['linea'])) {
             </div>
             <div class="col-md-6 bg-light">
                 <label for="" class="form-label fs-5">Municipio de Expedicion</label>
-                <select class="form-select" aria-label="nombre-linea" name="nombre-linea">
-                    <option value="">A</option>
-                    <option value="">B</option>
-                    <option value="">C</option>
-                    <option value="">D</option>
+                <select class="form-select" aria-label="nombre-linea" name="lst-municipios" id="lst-municipios">
+                    <option selected>Seleccionar Municipio...</option>
                 </select>
+                <script><?php include('../assets/js/ajax/selectMunicipio.js')?></script>
             </div>
             <!--//? Nombre y apellidos del aprendiz -->
             <div class="row">
@@ -149,7 +150,7 @@ if (isset($_REQUEST['linea'])) {
             </div>
             <div class="col-md-6 bg-light">
                 <label for="" class="form-label fs-5">Departamento de Nacimiento</label>
-                <select class="form-select ms-2" aria-label="departamento-expedicion" name="nombre-linea">
+                <select class="form-select ms-2" aria-label="departamento-expedicion" name="nombre-linea" id="lst-departamentos">
                     <?php
                     require('../model/dataGov.php');
                     ?>
@@ -157,11 +158,8 @@ if (isset($_REQUEST['linea'])) {
             </div>
             <div class="col-md-6 bg-light">
                 <label for="" class="form-label fs-5">Municipio de Nacimiento</label>
-                <select class="form-select ms-2" aria-label="nombre-linea" name="nombre-linea">
-                    <option value="">A</option>
-                    <option value="">B</option>
-                    <option value="">C</option>
-                    <option value="">D</option>
+                <select class="form-select ms-2" aria-label="nombre-linea" name="nombre-linea" id="lst-municipios">
+                    <option selected>Selecciona el Municipio</option>
                 </select>
             </div>
             <hr class="border border-danger border-2 opacity-50">
@@ -302,13 +300,8 @@ if (isset($_REQUEST['linea'])) {
             <!--//? confirmacion del Formulario -->
             <hr class="border border-success border-2 opacity-50 mb-0">
             <!-- //? Falta el boton de inscripcion -->
-            <div class="container text-center mt-4 mb-4">
-                <div class="container-sm mx-auto">dsjds
+            <div class="container d-flex justify-content-center mt-2 mb-2">
                 <button type="submit" class="btn-inscripcion fs-5">Inscribirse</button>
-                </div>
-                
-                <!--? El problemas es que centra con la clase btn, de lo contrario no -->
-                <!--? La clase btn no me deja agregar el estilo cool-->
             </div>
         </form>
     </div>
