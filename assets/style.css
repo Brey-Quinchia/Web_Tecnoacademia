@@ -145,3 +145,6 @@
 .rotate:hover{
 	transform: rotate(90deg);
 }
+a.go-download{
+    text-decoration: none;
+}
