@@ -145,3 +145,11 @@
 .rotate:hover{
 	transform: rotate(90deg);
 }
+a.go-download{
+    text-decoration: none;
+}
+.container-document{
+    /* Div contenedor del listado de documentos requeridos */
+    max-width: 700px;
+    /* background-color: aqua; */
+}

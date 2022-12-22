@@ -10,8 +10,8 @@ if (isset($_REQUEST['linea'])) {
     <link rel="shortcut icon" href="../assets/img/logoSena.png" type="image/x-icon" />
     <!-- Link de esytilo personañlizados -->
     <!-- Link de estilo de Bootstrap -->
-    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
     <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,6 +20,8 @@ if (isset($_REQUEST['linea'])) {
             document.getElementById(id).selected = 'true';
         }
     </script>
+    <script async src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+
     <title>Incripciones 2023</title>
 </head>
 
@@ -43,6 +45,53 @@ if (isset($_REQUEST['linea'])) {
                     <option value="" id="cbasicas">Ciencias Basicas</option>
                     <option value="" id="biotecnologia">Biotecnologia</option>
                 </select>
+            </div>
+            <!--//? Apartado de carga de Documentos-->
+            <div class="container" id="document-upload">
+                <hr class="border border-success border-2 opacity-50 mb-0">
+                <div>
+                    <p class="text-dark text-center fs-3 fw-semibold mt-0">Carga de Documentos</p>
+                </div>
+                <!--//* Alerta de relevancia al usuario-->
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong class="fs-5">Recuerda que: </strong> Debes realizar la carga de los documentos descritos en la
+                    Seccion <a href="beforeStart.php" class="alert-link">Antes de Empezar</a>, sin estos documentos no podras
+                    realizar el proceso de inscripción.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <!--//?Contenedores de carga de Archivos-->
+                <div class="row">
+                    <div class=" col-md-4 mb-3">
+                        <label for="formFile" class="form-label fs-5">Documento de Identidad del Aprendiz</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                    <div class=" col-md-4 mb-3">
+                        <label for="formFile" class="form-label fs-5">Documento del Acudiente</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                    <div class=" col-md-4 mb-3">
+                        <label for="formFile" class="form-label fs-5">Formato 
+                            <strong class="fs-5">Nombre del Formato</strong></label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=" col-md-4 mb-3">
+                        <label for="formFile" class="form-label fs-5">Formato
+                            <strong class="fs-5">Nombre del Formato</strong>
+                        </label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                    <div class=" col-md-4 mb-3">
+                        <label for="formFile" class="form-label fs-5">Formato
+                            <strong class="fs-5">Nombre del Formato</strong>
+                        </label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                </div>
+                    
+                <!--//!Fin del apartado de carga de documentos-->
+                <hr class="border border-success border-2 opacity-50 mb-0">
             </div>
             <!--//* Seleccion de Documento -->
             <div class="col-md-6 bg-light">
@@ -70,21 +119,19 @@ if (isset($_REQUEST['linea'])) {
             <!--//? Datos del lugar  de expedicion del documento -->
             <div class="col-md-6 bg-light">
                 <label for="" class="form-label fs-5">Departamento de Expedicion del Documento</label>
-                <select class="form-select ms-2" aria-label="departamento-expedicion" name="nombre-linea">
-                    <option value="">A</option>
-                    <option value="">B</option>
-                    <option value="">C</option>
-                    <option value="">D</option>
+                <select class="form-select ms-2" aria-label="departamento-expedicion" name="lst-departamentos" id="lst-departamentos">
+                    <option selected>Seleccionar Departamento...</option>
+                    <?php
+                    require('../model/dataGov.php');
+                    ?>
                 </select>
             </div>
             <div class="col-md-6 bg-light">
                 <label for="" class="form-label fs-5">Municipio de Expedicion</label>
-                <select class="form-select" aria-label="nombre-linea" name="nombre-linea">
-                    <option value="">A</option>
-                    <option value="">B</option>
-                    <option value="">C</option>
-                    <option value="">D</option>
+                <select class="form-select" aria-label="nombre-linea" name="lst-municipios" id="lst-municipios">
+                    <option selected>Seleccionar Municipio...</option>
                 </select>
+                <script src="../assets/js/ajax/selectMunicipio.js"></script>
             </div>
             <!--//? Nombre y apellidos del aprendiz -->
             <div class="row">
@@ -103,21 +150,19 @@ if (isset($_REQUEST['linea'])) {
             </div>
             <div class="col-md-6 bg-light">
                 <label for="" class="form-label fs-5">Departamento de Nacimiento</label>
-                <select class="form-select ms-2" aria-label="departamento-expedicion" name="nombre-linea">
-                    <option value="">A</option>
-                    <option value="">B</option>
-                    <option value="">C</option>
-                    <option value="">D</option>
+                <select class="form-select ms-2" aria-label="departamento-expedicion" name="lst-departamentos-nac" id="lst-departamentos-nac">
+                    <option selected>Seleccionar Departamento...</option>
+                    <?php
+                    require('../model/dataGov.php');
+                    ?>
                 </select>
             </div>
             <div class="col-md-6 bg-light">
                 <label for="" class="form-label fs-5">Municipio de Nacimiento</label>
-                <select class="form-select ms-2" aria-label="nombre-linea" name="nombre-linea">
-                    <option value="">A</option>
-                    <option value="">B</option>
-                    <option value="">C</option>
-                    <option value="">D</option>
+                <select class="form-select" aria-label="nombre-linea" name="lst-municipios-nac" id="lst-municipios-nac">
+                    <option selected>Seleccionar Municipio...</option>
                 </select>
+                <script src="../assets/js/ajax/selectMunicipioNac.js"></script>
             </div>
             <hr class="border border-danger border-2 opacity-50">
             <div class="col-md-6 bg-light">
@@ -176,12 +221,14 @@ if (isset($_REQUEST['linea'])) {
             <div class="col-md-6 bg-light">
                 <label for="" class="form-label fs-5">Tipo de Sangre </label>
                 <select class="form-select ms-2" aria-label="nombre-linea" name="nombre-linea">
-                    <option value="">X</option>
-                    <option value="">X</option>
-                    <option value="">X</option>
-                    <option value="">X</option>
-                    <option value="">X</option>
-                    <option value="">X</option>
+                    <option value="">O+</option>
+                    <option value="">O-</option>
+                    <option value="">A+</option>
+                    <option value="">A-</option>
+                    <option value="">B+</option>
+                    <option value="">B-</option>
+                    <option value="">AB+</option>
+                    <option value="">AB-</option>
                 </select>
             </div>
             <hr class="border border-danger border-2 opacity-50">
@@ -252,15 +299,18 @@ if (isset($_REQUEST['linea'])) {
                     <option value="">X</option>
                 </select>
             </div>
+            <!--//? confirmacion del Formulario -->
+            <hr class="border border-success border-2 opacity-50 mb-0">
+            <!-- //? Falta el boton de inscripcion -->
+            <div class="container d-flex justify-content-center mt-2 mb-2">
+                <button type="submit" class="btn-inscripcion fs-5">Inscribirse</button>
+            </div>
         </form>
     </div>
 
     </form>
     </div>
     <script src="../assets/js/bootstrap.bundle.js"></script>
-
 </body>
-<!-- A simple gratin -->
 
 </html>
-<!-- is a simple comment  -->
