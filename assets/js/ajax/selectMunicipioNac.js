@@ -7,14 +7,14 @@
             $('#lst-municipios-nac').find('option').remove().end().append('<option value="whatever">...</option>').val('whatever');
     
             //OBTENEMOS LA OPCION SELECCIONADA DEL PRIMER SELECT
-            $("#lst-departamentos option:selected").each(function() {
+            $("#lst-departamentos-nac option:selected").each(function() {
             //ALAMACENAMOS EN UNA VARIABLE EL VALUE DE DICHA SELECCION
-            var withoutcode2 = $(this).val();
-            var departamentoNac = encodeURI(withoutcode2);
+            var withoutcode = $(this).val();
+            var pais = encodeURI(withoutcode);
             //HACEMOS LA PETICION ENVIANDO DICHO VALUE
             $.ajax({
                 data: {
-                    departamento: departamentoNac
+                    pais: pais
                 },
                 url: '../model/dataMunicipiosNac.php',
                 type: 'post',

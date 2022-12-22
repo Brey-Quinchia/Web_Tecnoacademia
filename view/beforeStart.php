@@ -94,7 +94,7 @@
                         <?php include_once('../model/requireLine.php') ?>
                         <a href="<?= 'inscripcion.php?linea=' . $linea ?>" class="btn fs-5">
                             <div class="btn-inscripcion mx-auto">
-                                Inscribirse
+                                Continuar
                                 <img src="../assets/icon/submit.svg" alt="" class="icon submit rotate">
                             </div>
                         </a>
