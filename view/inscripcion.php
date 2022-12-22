@@ -131,7 +131,7 @@ if (isset($_REQUEST['linea'])) {
                 <select class="form-select" aria-label="nombre-linea" name="lst-municipios" id="lst-municipios">
                     <option selected>Seleccionar Municipio...</option>
                 </select>
-                <script><?php include('../assets/js/ajax/selectMunicipio.js')?></script>
+                <script src="../assets/js/ajax/selectMunicipio.js"></script>
             </div>
             <!--//? Nombre y apellidos del aprendiz -->
             <div class="row">
@@ -150,7 +150,8 @@ if (isset($_REQUEST['linea'])) {
             </div>
             <div class="col-md-6 bg-light">
                 <label for="" class="form-label fs-5">Departamento de Nacimiento</label>
-                <select class="form-select ms-2" aria-label="departamento-expedicion" name="nombre-linea" id="lst-departamentos">
+                <select class="form-select ms-2" aria-label="departamento-expedicion" name="lst-departamentos-nac" id="lst-departamentos-nac">
+                    <option selected>Seleccionar Departamento...</option>
                     <?php
                     require('../model/dataGov.php');
                     ?>
@@ -158,9 +159,10 @@ if (isset($_REQUEST['linea'])) {
             </div>
             <div class="col-md-6 bg-light">
                 <label for="" class="form-label fs-5">Municipio de Nacimiento</label>
-                <select class="form-select ms-2" aria-label="nombre-linea" name="nombre-linea" id="lst-municipios">
-                    <option selected>Selecciona el Municipio</option>
+                <select class="form-select" aria-label="nombre-linea" name="lst-municipios-nac" id="lst-municipios-nac">
+                    <option selected>Seleccionar Municipio...</option>
                 </select>
+                <script src="../assets/js/ajax/selectMunicipioNac.js"></script>
             </div>
             <hr class="border border-danger border-2 opacity-50">
             <div class="col-md-6 bg-light">
