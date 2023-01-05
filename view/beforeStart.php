@@ -46,7 +46,7 @@
                         <!--//? Link de descarga del formato D1 -->
                         <li class="list-group-item d-flex justify-content-between align-items-start">
                             <div class="ms-2 me-auto">
-                                //!Falta actualizacion de seguridad para el nombre de los archivos
+                                <!-- //!Falta actualizacion de seguridad para el nombre de los archivos -->
                                 <div class="fw-bold">Formato <strong>D1-Clausula De Compromiso</strong></div>
                                 Clausula de Compromiso del aprendiz correctamente diligenciada.
                                 <a href="../files/format/(D1)_Clausula_De_Compromiso.pdf" class="go-download" download="(D1)_Clausula_De_Compromiso.pdf">

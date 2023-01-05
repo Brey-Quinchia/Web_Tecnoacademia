@@ -8,7 +8,7 @@ if (isset($_REQUEST['linea'])) {
 
 <head>
     <link rel="shortcut icon" href="../assets/img/logoSena.png" type="image/x-icon" />
-    <!-- Link de esytilo personañlizados -->
+    <!-- Link de esytilo personalizados -->
     <!-- Link de estilo de Bootstrap -->
     <link rel="stylesheet" href="../assets/style.css" />
     <link rel="stylesheet" href="../assets/css/bootstrap.css" />
@@ -20,9 +20,9 @@ if (isset($_REQUEST['linea'])) {
             document.getElementById(id).selected = 'true';
         }
     </script>
-    <script async src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <script  src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous" defer></script>
 
-    <title>Incripciones 2023</title>
+    <title>Inscripciones 2023</title>
 </head>
 
 <body onload="autoselect('<?= $linea ?>')">
@@ -312,7 +312,7 @@ if (isset($_REQUEST['linea'])) {
     </div>
     <?php include('components/footer.html')
     ?>
-    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <script src="../assets/js/bootstrap.bundle.js" defer></script>
 </body>
 
 </html>
