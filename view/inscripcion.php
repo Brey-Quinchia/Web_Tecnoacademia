@@ -310,6 +310,8 @@ if (isset($_REQUEST['linea'])) {
 
     </form>
     </div>
+    <?php include('components/footer.html')
+    ?>
     <script src="../assets/js/bootstrap.bundle.js"></script>
 </body>
 

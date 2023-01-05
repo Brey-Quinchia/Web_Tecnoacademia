@@ -46,9 +46,10 @@
                         <!--//? Link de descarga del formato D1 -->
                         <li class="list-group-item d-flex justify-content-between align-items-start">
                             <div class="ms-2 me-auto">
+                                //!Falta actualizacion de seguridad para el nombre de los archivos
                                 <div class="fw-bold">Formato <strong>D1-Clausula De Compromiso</strong></div>
                                 Clausula de Compromiso del aprendiz correctamente diligenciada.
-                                <a href="../download/?doc=D1" class="go-download">
+                                <a href="../files/format/(D1)_Clausula_De_Compromiso.pdf" class="go-download" download="(D1)_Clausula_De_Compromiso.pdf">
                                     <div class="alert alert-warning alert-dismissible fade show" role="alert">
                                         👉Descarga el formato D1👈
                                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -63,9 +64,9 @@
                                 <div class="fw-bold">Formato <strong>D2-Información de Registro</strong></div>
                                 Formato de Informacion requerida para registro en plataforma,
                                 correctamente diligenciado.
-                                <a href="../download/?doc=D3" class="go-download">
+                                <a href="../files/format/(D2)_Informacion_De_Registro_En_Plataforma.pdf" class="go-download" download="(D2)_Informacion_De_Registro_En_Plataforma.pdf">
                                     <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                                        👉Descarga el formato D3👈
+                                        👉Descarga el formato D2👈
                                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                     </div>
                                 </a>
@@ -77,7 +78,7 @@
                             <div class="ms-2 me-auto">
                                 <div class="fw-bold">Formato <strong>D3-Tratamiento de Datos</strong></div>
                                 Formato "Tratamiento de datos Menor de edad", correctamente diligenciado.
-                                <a href="../download/?doc=D3" class="go-download">
+                                <a href="../files/format/(D3)_Formato_Tratamiento_De_Datos.pdf" class="go-download" download="(D3)_Formato_Tratamiento_De_Datos.pdf">
                                     <div class="alert alert-warning alert-dismissible fade show" role="alert">
                                         👉Descarga el formato D3👈
                                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -105,7 +106,7 @@
         </div>
     </main>
     <!--//* Espacio reservado para el Footer-->
-    <?php //include('components/footer.html')
+    <?php include('components/footer.html')
     ?>
     <script src="../assets/js/bootstrap.bundle.js"></script>
 
